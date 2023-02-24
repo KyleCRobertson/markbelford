@@ -51,8 +51,17 @@ h1{
   font-size: 72px;
   line-height: 75px;
   font-family: bodoni-urw, serif;
-font-style: normal;
-font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  padding: 0px;
+  margin: 0px;
+}
+h3{
+  font-size: 21px;
+  line-height: 24px;
+  font-family: bodoni-urw, serif;
+  font-style: normal;
+  font-weight: 700;
   padding: 0px;
   margin: 0px;
 }
