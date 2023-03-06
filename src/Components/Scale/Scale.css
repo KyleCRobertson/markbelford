@@ -1,0 +1,31 @@
+.bg-scale{
+    position: fixed;
+    display: block;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    margin: 0px auto;
+    height: 100vh;
+    /*background-color: #e1ddd0;*/
+    z-index: -1;
+    width: 100%;
+    opacity: 0.6;
+    }
+@media only screen and (min-width:992px){
+
+}
+@media only screen and (min-width:1200px){
+.bg-scale{
+    max-width: 987px;
+    }    
+}
+@media only screen and (min-width:1400px){
+.bg-scale{
+    max-width: 1364px;
+    }    
+}
+@media only screen and (min-width:1600px){
+.bg-scale{
+    max-width: 1597px;
+    }    
+}

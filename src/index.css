@@ -1,13 +1,100 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+	font-family: 'HCo Gotham SSm Light';
+	font-display: auto;
+	src:url('./Webfonts/woff2/GothamSSm-Light_Web.woff2') format('woff2'),
+		url('./Webfonts/woff/GothamSSm-Light_Web.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HCo Gotham SSm Book';
+	font-display: auto;
+	src:url('./Webfonts/woff2/GothamSSm-Book_Web.woff2') format('woff2'),
+		url('./Webfonts/woff/GothamSSm-Book_Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f5f2;
+  color: #585756;
+  /*font-family: montserrat, sans-serif;*/
+  font-family: 'HCo Gotham SSm Light';
+  font-size: 13px;
+  line-height: 18px;
+}
+
+html, body, #app, #app>div {
+  min-height: 100vh;
+}
+
+* {
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
+
+h1{
+  font-size: 72px;
+  line-height: 75px;
+  font-family: bodoni-pt-variable, sans-serif;
+  font-style: normal;
+  font-variation-settings: "opsz" 60, "wght" 700;
+  padding: 0px;
+  margin: 0px;
+}
+h3{
+  font-size: 21px;
+  line-height: 24px;
+  font-family: bodoni-pt-variable, sans-serif;
+  font-style: normal;
+  font-variation-settings: "opsz" 60, "wght" 700;
+  padding: 0px;
+  margin: 0px;
+}
+p{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+@media only screen and (min-width:992px){
+  
+}
+@media only screen and (min-width:1200px){
+  
 }
