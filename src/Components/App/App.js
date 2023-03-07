@@ -1,29 +1,58 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
+import Header from '../Header/Header';
+import Home from '../Pages/';
+import AboutMark from '../Pages/AboutMark';
+import Work from '../Pages/Work';
+import Press from '../Pages/Press';
+import Contact from '../Pages/Contact';
 
 
 class App extends React.Component{
   render(){
     return (
-      <main id='app'>
-        <section className='content content-top'>
-          <div className='row'>
-            <div className='col-md-6'>
-              <h1>Mark Belford</h1>
-              <p>Surrounded by the red carpet glamour of the 2000 Academy Awards, fashion star Mark Belford was born. Since his Oscar debut with four custom commissioned gowns making their appearance, Mark has continued his focus on creating extraordinary couture attire for royalty, socialites and
-              celebrities around the world.<br/>
-              <br/>
-              Immediately striking and ultimately timeless, every Mark Belford design is the ultimate expression of a client’s inner beauty, dressed with the grace, confidence and allure befitting that special occasion. His work is the product of his clients’ innermost couture desires – they are his muse; he the creative vessel that brings them to life.<br/>
-              <br/>
-              <h3>Toronto. New York. Los Angeles.<br/><br/><br/><br/><br/><br/><br/><br/><br/></h3>
-              </p>
-              
-            </div>
-          </div>
-        </section>
-      </main>
+      <Router>
+        <Header />
+        <Routes>
+          <Route exact path='/' exact element={<Home />} />
+          <Route exact path='/AboutMark' exact element={<AboutMark />} />
+          <Route exact path='/Work' exact element={<Work />} />
+          <Route exact path='/Press' exact element={<Press />} />
+          <Route exact path='/Contact' exact element={<Contact />} />
+        </Routes>
+      </Router>
     );
   }
 }
 
 export default App;
+
+/*
+import React from 'react';
+import './App.css';
+import Navbar from '../Navbar';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from '../../Pages/';
+import About from '../../Pages/about';
+import Blogs from '../../Pages/blog';
+import SignUp from '../../Pages/signup';
+import Contact from '../../Pages/contact';
+  
+function App() {
+return (
+    <Router>
+    <Navbar />
+    <Routes>
+        <Route exact path='/' exact element={<Home />} />
+        <Route path='/about' element={<About/>} />
+        <Route path='/contact' element={<Contact/>} />
+        <Route path='/blogs' element={<Blogs/>} />
+        <Route path='/sign-up' element={<SignUp/>} />
+    </Routes>
+    </Router>
+);
+}
+  
+export default App;
+*/

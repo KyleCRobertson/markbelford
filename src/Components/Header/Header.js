@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from './HeaderElements';
 import logo from '../../images/mark-belford-logo-dark.svg'
 import './Header.css';
 
@@ -8,17 +9,19 @@ class Header extends React.Component{
             <header>
                 <div className='header-container'>
                     <div className='header-logo'>
+                        <a href='/'>
                         <picture>
                             <img src={logo} height='100%' width='100%' alt='Mark Belford Logo' />
                             <div className='header-logo-text'>Haute Couture</div>
                         </picture>
+                        </a>
                     </div>
                     <div className='menu'>
                         <ul>
-                            <li className='menu-item menu-item-1'><a href='AboutMark'>About Mark</a></li>
-                            <li className='menu-item menu-item-2'><a href='Work'>Work</a></li>
-                            <li className='menu-item menu-item-3'><a href='Press'>Press</a></li>
-                            <li className='menu-item menu-item-4 last'><a href='Contact'>Contact</a></li>
+                            <NavLink to="/AboutMark" className="nav-link" activeStyle>About Mark</NavLink>
+                            <NavLink to="/Work" className="nav-link" activeStyle>Work</NavLink>
+                            <NavLink to="/Press" className="nav-link" activeStyle>Press</NavLink>
+                            <NavLink to="/Contact" className="nav-link last" activeStyle>Contactz</NavLink>
                         </ul>
                     </div>
                 </div>
