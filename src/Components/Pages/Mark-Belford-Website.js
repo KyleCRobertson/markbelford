@@ -1,7 +1,7 @@
 import React from 'react';
-import './index.css';
+import './Mark-Belford-Website.css';
 
-class Home extends React.Component{
+class MarkBelfordWebsite extends React.Component{
   render(){
     return (
       <main id='app'>
@@ -18,4 +18,4 @@ class Home extends React.Component{
   }
 }
 
-export default Home;
+export default MarkBelfordWebsite;

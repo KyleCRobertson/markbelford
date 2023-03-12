@@ -20,11 +20,11 @@ body{
   height: 100%;
   width: 100%;
   background-color: #f6f5f2;
-  color: #585756;
+  color: #555555;
   /*font-family: montserrat, sans-serif;*/
   font-family: 'HCo Gotham SSm Light';
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 html, body, #app, #app>div {
@@ -68,13 +68,14 @@ html, body, #app, #app>div {
 */
 
 h1{
-  font-size: 72px;
-  line-height: 75px;
+  font-size: 76px;
+  line-height: 64px;
   font-family: bodoni-pt-variable, sans-serif;
   font-style: normal;
   font-variation-settings: "opsz" 60, "wght" 700;
   padding: 0px;
   margin: 0px;
+  padding-bottom: 12px;
 }
 h3{
   font-size: 21px;

@@ -7,7 +7,7 @@ class Work extends React.Component{
                 <section className='content content-top'>
                     <div className='row'>
                         <div className='col-md-6'>
-                        <h1>Work</h1>
+                        <h1>work</h1>
                         <p>
                             ?????
                         </p>

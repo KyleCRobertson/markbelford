@@ -7,7 +7,7 @@ class Press extends React.Component{
                 <section className='content content-top'>
                     <div className='row'>
                         <div className='col-md-6'>
-                        <h1>Press</h1>
+                        <h1>press</h1>
                         <p>
                             ?????
                         </p>

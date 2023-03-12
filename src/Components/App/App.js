@@ -2,12 +2,13 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import './App.css';
 import Header from '../Header/Header';
-import Home from '../Pages/';
-import AboutMark from '../Pages/AboutMark';
+import Home from '../Pages/index';
+import MarkBelford from '../Pages/MarkBelford';
 import Work from '../Pages/Work';
 import Press from '../Pages/Press';
 import Contact from '../Pages/Contact';
 
+import MarkBelfordWebsite from '../Pages/Mark-Belford-Website';
 
 class App extends React.Component{
   render(){
@@ -15,11 +16,12 @@ class App extends React.Component{
       <Router>
         <Header />
         <Routes>
-          <Route exact path='/' exact element={<Home />} />
-          <Route exact path='/AboutMark' exact element={<AboutMark />} />
-          <Route exact path='/Work' exact element={<Work />} />
-          <Route exact path='/Press' exact element={<Press />} />
-          <Route exact path='/Contact' exact element={<Contact />} />
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/Mark-Belford-Website' element={<MarkBelfordWebsite />} />
+          <Route path='/MarkBelford' element={<MarkBelford />} />
+          <Route path='/Work' element={<Work />} />
+          <Route path='/Press' element={<Press />} />
+          <Route path='/Contact' element={<Contact />} />
         </Routes>
       </Router>
     );
@@ -27,32 +29,3 @@ class App extends React.Component{
 }
 
 export default App;
-
-/*
-import React from 'react';
-import './App.css';
-import Navbar from '../Navbar';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from '../../Pages/';
-import About from '../../Pages/about';
-import Blogs from '../../Pages/blog';
-import SignUp from '../../Pages/signup';
-import Contact from '../../Pages/contact';
-  
-function App() {
-return (
-    <Router>
-    <Navbar />
-    <Routes>
-        <Route exact path='/' exact element={<Home />} />
-        <Route path='/about' element={<About/>} />
-        <Route path='/contact' element={<Contact/>} />
-        <Route path='/blogs' element={<Blogs/>} />
-        <Route path='/sign-up' element={<SignUp/>} />
-    </Routes>
-    </Router>
-);
-}
-  
-export default App;
-*/
