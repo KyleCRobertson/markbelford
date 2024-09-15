@@ -1,0 +1,51 @@
+.heroHeader{
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    width: min-content;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    color: #fd1d86;
+    }
+.heroHeader h1>*{
+    padding: 0px !important;
+    position: relative;
+    display: block;
+    font-size: 96px;
+    line-height: 1em;
+    font-size: 60px;
+    }
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    margin-left: 27px;
+    font-size: 42px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -21px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -27px;
+    margin-left: 8px;
+    }
+@media only screen and (min-width:768px){
+}
+@media only screen and (min-width:1200px){
+.heroHeader{
+    margin-left: auto;
+    }
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    font-size: 72px;
+    margin-left: 44px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -36px;
+    margin-left: 0px;
+    font-size: 96px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -42px;
+    margin-left: 13px;
+    font-size: 96px;
+    }
+}

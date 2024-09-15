@@ -1,0 +1,47 @@
+.heroHeader{
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    width: max-content;
+    padding: 0px;
+    color: #fd1d86;
+    }
+.heroHeader h1>*{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 1em;
+    }
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    margin-left: 30px;
+    font-size: 36px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -21px;
+    font-size: 60px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -16px;
+    margin-left: 39px;
+    font-size: 96px;
+    }
+@media only screen and (min-width:768px){
+}
+@media only screen and (min-width:1200px){
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    font-size: 60px;
+    margin-left:27px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -16px;
+    margin-left: 0px;
+    font-size: 96px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -29px;
+    margin-left: 40px;
+    font-size: 96px;
+    }
+}

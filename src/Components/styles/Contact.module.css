@@ -1,0 +1,40 @@
+form{
+    position: relative;
+    display: block;
+    margin-top: 34px !important;
+}
+form input{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #555555;
+    background-color: transparent;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 11px;
+}
+form button{
+    position: relative;
+    font-family: bodoni-pt-variable, sans-serif;
+    font-style: normal;
+    font-variation-settings: "opsz" 60, "wght" 700;
+    font-size: 34px;
+    background-color: transparent;
+    color: #555;
+    padding: 0px;
+    margin-top: 11px;
+    }
+
+.contactLink{
+    font-size: 21px;
+    color: #fd1d86;
+    }
+.contactLink:hover{
+    color: #be0059;
+    }
+
+
+
+
+
+
+    

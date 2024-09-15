@@ -1,0 +1,201 @@
+.main-image{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 1597px;
+    margin: 0px auto;
+    padding-bottom: 30px;
+    }
+img{
+    vertical-align: initial !important;
+    }
+.swedish-prince-header{
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    width: 220px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    right: -40px;
+    /*color: #131312;*/
+    color: #fd1d86;
+    /*
+    position: absolute;
+    display: inline-block;
+    margin-top: 55px;
+    margin-left: 11px;
+    height: auto;
+    width: 525px;
+    z-index: 2;
+    */
+    }
+.swedish-prince-header h1{
+    padding: 0px !important;
+    }
+.swedish-prince-header h1 .adj-1{
+    position: relative;
+    display: inline-block;
+    top: -6px;
+    font-size: 24px;
+    left: -11px;
+    }
+.swedish-prince-header h1 .adj-2{
+    position: relative;
+    display: inline-block;
+    top: 0px;
+    font-size: 48px;
+    left: -8px;
+    }
+.swedish-prince-header h1 .adj-3{
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    font-size: 48px;
+    left: 0px;
+    }
+.swedish-prince-text-block-1{
+    position: relative;
+    padding: 42px 60px 48px 60px;
+    }
+.swedish-prince-text-block-2{
+    position: relative;
+    display: inline-block;
+    padding: 42px 72px 37px 72px;
+    }
+.swedish-prince-text-block-2.adj-out{
+    padding: 42px 42px 37px 42px;
+    }
+    /*
+.swedish-prince-text-block-2::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 96.5%;
+    width: 11px;
+    background-color: rgb(223, 0, 0);
+    top: 2px;
+    left: -21px;
+    }
+    */
+.swedish-prince-text-block-2 p{
+    font-size: 14px;
+    line-height: 21px;
+    }
+.swedish-prince-1{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-2{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-3{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-4{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-5{
+    position: relative;
+    display: inline-block;
+    }
+ .swedish-prince-6{
+    position: relative;
+    display: inline-block;
+    padding: 0px 36px;
+    }
+ .swedish-prince-7{
+    position: relative;
+    display: inline-block;
+    }
+.image-placeholder{
+    position: absolute;
+    display: none;
+    top: 0px;
+    left: 80px;
+    height: auto;
+    width: 1340px;
+    z-index: -1;
+    opacity: 0;
+}
+
+@media only screen and (min-width:1200px){
+.swedish-prince-header{
+    position: relative;
+    top: 7px;
+    left: 0px;
+    height: 110px;
+    width: auto;
+    z-index: 2;
+    margin: 0px;
+    }
+.swedish-prince-header h1{
+    height: 110px;
+    }
+.swedish-prince-header h1 .adj-1{
+    top: -12px;
+    font-size: 42px;
+    left: -14px;
+    }
+.swedish-prince-header h1 .adj-2{
+    top: 0px;
+    font-size: inherit;
+    left: -11px;
+    }
+.swedish-prince-header h1 .adj-3{
+    top: 55px;
+    font-size: inherit;
+    left: -335px;
+    margin: 0px;
+    }
+.swedish-prince-text-block-1{
+    position: relative;
+    left: 0%;
+    height: auto;
+    padding: 0px;
+    }
+.swedish-prince-text-block-2{
+    position: relative;
+    display: inline-block;
+    padding: 0px 5.5px;
+    }
+.swedish-prince-1{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-2{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-3{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-4{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-5{
+    position: relative;
+    display: inline-block;
+    }
+.swedish-prince-6{
+    position: relative;
+    display: inline-block;
+    padding: 0px 5.5px;
+    }
+.swedish-prince-7{
+    position: relative;
+    display: inline-block;
+    }
+}
+@media only screen and (min-width:1400px){
+}
+@media only screen and (min-width:1550px){
+}
+@media only screen and (min-width:1800px){
+
+}
