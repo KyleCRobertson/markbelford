@@ -1,0 +1,127 @@
+.hero{
+    position: relative;
+}
+.heroHeader{
+    position: absolute;
+    height: auto;
+    width: min-content;
+    padding: 0px;
+    top: 32%;
+    left: 10%;
+    color: #fd1d86;
+    z-index: 2;
+    }
+.heroHeader h1>*{
+    position: relative;
+    display: block;
+    padding: 0px !important;
+    font-size: 96px;
+    line-height: 1em;
+    }
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    margin-left: 51px;
+    font-size: 48px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -42px;
+    font-size: 96px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -28px;
+    margin-left: 60px;
+    font-size: 73px;
+    }
+.thePrince{
+    position: relative;
+    display: block;
+    z-index: 100;
+    }
+.locationText{
+    left: 63px;
+    bottom: 15px;
+    }
+.contentTopParagraph{
+    position: relative;
+    display: block;
+    height: fit-content;
+    font-size: 18px;
+    margin-top: 24px;
+    }
+.locationText{
+    position: relative;
+    left: 20.5%;
+    bottom: 9px;
+    }
+.locationText .line1{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    }
+.locationText .line2{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+    }
+.swedishPrinceHeroPic{
+    position: relative;
+    z-index: -1;
+    margin-left: -56px;
+    margin-right: -56px;
+    }
+@media only screen and (min-width:768px){
+    .heroHeader{
+        top: 12%;
+        left: 38%;
+        }
+}
+@media only screen and (min-width:996px){
+.swedishPrinceHeroPic{
+    margin-left: -7vw;
+    margin-right: 0px;
+    }
+.contentTopParagraph{
+    position: absolute;
+    }  
+}
+@media only screen and (min-width:1200px){
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    margin-left: 51px;
+    font-size: 48px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -42px;
+    font-size: 96px;
+    }
+.heroHeader h1 .adj3{
+    margin-top: -28px;
+    margin-left: 60px;
+    font-size: 73px;
+    }
+.locationText{
+    left: 63px;
+    bottom: 15px;
+    }
+.swedishPrinceHeroPic{
+    margin-left: 0px;
+    margin-right: 0px;
+    }
+}
+@media only screen and (min-width:1400px){
+    .contentTopParagraph{
+        padding-top: 25%;
+        }
+}
+@media only screen and (min-width:1800px){
+    .heroHeader{
+        top: 29%;
+        left: 29%;
+        }
+}

@@ -1,0 +1,373 @@
+.landingSans{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    line-height: 1.16em;
+    width: 100%;
+    max-width: 300px;
+    color: rgb(244, 242, 237);
+    }
+.landingSans .style1{
+    position: relative;
+    display: block;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 0.9em;
+    white-space: nowrap;
+    text-align: left;
+    }
+.landingSans .style2{
+    font-size:24px;
+    font-weight: 600;
+    line-height: 1.1em;
+    white-space: nowrap;
+    }
+.landingLinkText{
+    position: absolute;
+    bottom: 24px;
+    left: 0px;
+    }
+.landingClickTextImg{
+    position: relative;
+    top: -9px;
+    left: 34px;
+    width: 236px;
+    }
+.callOutTxt{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.2em;
+    }
+h1.darkBackground{
+    color: #d8d2c2;
+    text-shadow: 0px 0px 30px rgba(0, 0, 0, 1), 0px 0px 60px rgba(0, 0, 0, 1);
+    }
+h1.home{
+    font-size: 29px;
+    line-height: 1.15em;
+    }
+.landingPageTop{
+    position: relative;
+    top: 0px;
+    margin-top: 0px;
+    min-height: 100vh;
+    max-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    }
+.landingPageTopInner{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin:0px auto !important;
+    padding:0px 18px 0px 18px;
+    height:100vh;
+    }
+.landingPageTopCallOut{
+    position: relative;
+    padding-top: 44vh;
+    }
+.landingPageTopBottom{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    display: block;
+    width: 100%;
+    bottom: 24px;
+    padding-left: 18px;
+    padding-right: 18px;
+    }
+.landingTextImg{
+    position: relative;
+    display: block;
+    margin-left: -6px;
+    }
+.landingPageTopTextBlock{
+    max-width: 200px;
+    }
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1-xs.webp);
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.homeSectionBTF1{
+    padding-top: 123px;
+    padding-bottom: 99px;
+    }
+.belowTheFoldHeader{
+    position: relative;
+    margin: 0px auto;
+    height: auto;
+    padding: 0px;
+    color: #fd1d86;
+    font-size: 48px;
+    line-height: 1em;
+    letter-spacing: 0em;
+    padding-bottom:0px;
+    font-family: "BenguiatCaslonRegular";
+    }
+.contentTopParagraph{
+    padding-top: 0px;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    }
+.fullBleedFlushLeft {
+    position: relative;
+    display: block;
+    }
+.halfPageRight {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 48%;
+    transform: translateY(-50%);
+    }
+.imageLinkCaption{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 9px;
+    bottom: 39px;
+    left: 12px;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #111;
+    width: auto;
+    }
+.imageLinkCaption .line1{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding-bottom: 6px;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    }
+.imageLinkCaption .line2{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-family: "BenguiatCaslonRegular";
+    color: rgb(253, 29, 134);
+    }
+.imageLinkCaption .line3{
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1em;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #111;
+    }
+.footerImage{
+    position: absolute;
+    display: block;
+    right: -110px;
+    width: 900px;
+    bottom: -175px;
+    z-index: -1;
+    opacity: 0.2;
+    }
+.midPageImage{
+    position: absolute;
+    display: block;
+    left: -260px;
+    width: 620px;
+    top: calc(100vh + 100vw);
+    z-index: -1;
+    opacity: 0.2;
+    }
+.footerBannerText{
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-bottom: 12px;
+    }
+@media only screen and (min-width:576px){
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1-sm.webp);
+    background-position: center center;
+    }
+.landingPageTopInner{
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+.landingPageTopBottom{
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+.landingSans{
+    padding-top: 84px;
+    max-width: 100%;
+    }
+.landingSans .style1{
+    right: -12px;
+    top: -2px;
+    font-size: 36px;
+    text-align: right;
+    }
+.landingSans .style2{
+    font-size: 28px;
+    }
+.belowTheFoldHeader{
+    font-size: 72px;
+    }
+.landingPageTopTextBlock{
+    max-width: 100%;
+    }
+}
+@media only screen and (min-width:768px){
+.landingPageTopInner{
+    padding-left: 55px;
+    padding-right: 55px;
+    }
+.landingClickTextImg{
+    top: -14px;
+    left: 34px;
+    }
+.landingTextImg{
+    margin-left: -9px;
+    }
+.landingPageTopBottom{
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 48px;
+    }
+h1.home{
+    font-size: 34px;
+    }
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1-md.webp);
+    background-position: center center;
+    }
+.fullBleedFlushLeft {
+    width: 83.33333333vw;
+    margin-left: calc(83.33333333% - 83.33333333vw);
+    padding-left: 31px;
+    }
+.fullBleedFlushLeft .imageLinkCaption{
+    left: 55px;
+    }
+}
+@media only screen and (min-width:992px){
+h1.home{
+    font-size: 55px;
+    line-height: 1.1em;
+    }
+.landingPageTopInner{
+    max-width: 843px;
+    padding: 0px;
+    }
+.landingPageTopCallOut{
+    padding-top: 18vh;
+    }
+.fullBleedFlushLeft {
+    width: 58.33333333vw;
+    margin-left: calc(58.33333333% - 58.33333333vw);
+    padding-left: 12px;
+    }
+.imageLinkCaption{
+    float: right;
+    right: 24px;
+    left: unset;
+    }
+.fullBleedFlushLeft .imageLinkCaption{
+    left: unset;
+    }
+.landingPageTopBottom{
+    padding-left: 0px;
+    padding-right: 0px;
+    }
+}
+@media only screen and (min-width:1200px){
+.landingPageTopInner{
+    max-width: 987px;
+    }
+.landingTextImg{
+    margin-left: -14px;
+    }
+    .footerBannerText{
+        font-size: 24px;
+        }
+h1.darkBackground{
+    line-height: 1.02em;
+    }
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1.webp);
+    background-position: center center;
+    }
+.fullBleedFlushLeft {
+    width: 50vw;
+    margin-left: calc(50% - 50vw);
+    padding-left: 0px;
+    }
+.halfPageRight {
+    display: block;
+    position: absolute;
+    width: 100%;
+    max-width: 1220px;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 48%;
+    transform: translateY(-50%);
+    }
+
+}
+@media only screen and (min-width:1400px){
+.landingPageTopInner{
+    max-width: 1152px;
+    padding:0px !important;
+    } 
+}
+@media only screen and (min-width:1600px){
+.landingPageTopInner{
+    max-width: 1364px;
+    }
+.landingClickTextImg{
+    top: -14px;
+    left: 14px;
+    }
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1.webp);
+    background-position: center center;
+    }
+}
+@media only screen and (min-width:1800px){
+.landingPageTopInner{
+    max-width: 1597px;
+    }
+.landingClickTextImg{
+    top: -18px;
+    left: 33px;
+    }
+}
+@media only screen and (min-width:576px) and (orientation: portrait){
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1-sm-port.webp);
+    background-position: center center;
+    }
+}
+@media only screen and (min-width:992px) and (orientation: portrait){
+.landingBackground{
+    background-image: url(../../images/home/mark-belford-home-1.webp);
+    background-position: center center;
+    }
+}

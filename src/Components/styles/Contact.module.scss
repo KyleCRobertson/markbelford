@@ -1,0 +1,198 @@
+.contactForm{
+    display: flex;
+    padding-top: 48px;
+    }
+.contactForm.off{
+    display: none;
+    }
+.thankYouBlock{
+    display: flex;
+    }
+.thankYouBlock.on{
+    display: flex;
+    }
+.spec1shift{
+    padding-left: 250px;
+    }
+.wrkOfArt{
+    position: relative;
+    display: inline-block;
+    padding-left: 45px;
+    margin-top: -10px;
+    font-weight: 800;
+    }
+.regTextBlk{
+    position: relative;
+    display: block;
+    margin-top: 55px;
+    width: 100%;
+    }
+.qstnMrkAdj{
+    position: relative;
+    display: inline-block;
+    margin-left: -6px;
+    top: 37px;
+    font-size: 96px;
+    font-weight: 200;
+    }
+.dsrTxt{
+    width: 100%;
+    max-width: 90px;
+    }
+form{
+    position: relative;
+    display: block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+form label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    }
+form input{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #555555;
+    background-color: transparent;
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 11px;
+    letter-spacing: 0.02em;
+    }
+form textarea{
+    position: relative;
+    display: block;
+    border-bottom: 1px solid #555555;
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin-bottom: 11px;
+    letter-spacing: 0.02em;
+}
+form button{
+    position: relative;
+    font-size: 21px;
+    background-color: transparent;
+    color: #555;
+    padding: 0px;
+    margin-top: 11px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    transition: all ease-in-out 200ms;
+    }
+form button:hover{
+    color: #fd1d86;
+    }
+.contactLink{
+    font-size: 21px;
+    color: #fd1d86;
+    }
+.contactLink:hover{
+    color: #be0059;
+    }
+.errorMessage{
+    color: red;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    }
+.submitBtn{
+    text-align: left;
+    font-size: 24px;
+    border: none;
+    margin-top: 24px;
+    font-weight: 600;
+    color: #fd1d86;
+    }
+@media only screen and (min-width:576px){
+.wrkOfArt{
+    padding-left: calc(36px + 1.5%);
+    }
+.dsrTxt{
+    padding-left: calc(36px + 3.1%);
+    }
+.regTextBlk{
+    position: absolute;
+    display: inline;
+    font-size: 16px;
+    line-height: 1.33em;
+    margin-top: 79px;
+    width: 48%;
+    padding-left: 9px;
+    }
+}
+@media only screen and (min-width:768px){
+.wrkOfArt{
+    padding-left: calc(48px + 16.5%);
+    }
+.dsrTxt{
+    padding-left: calc(48px + 9.2%);
+    }
+.regTextBlk{
+    width: 47.2%;
+    }
+}
+@media only screen and (min-width:992px){
+.wrkOfArt{
+    padding-left: 28.2%;
+    }
+.dsrTxt{
+    padding-left: 6.5%;
+    }
+.regTextBlk{
+    width: 53.9%;
+    }
+}
+@media only screen and (min-width:1200px){
+.wrkOfArt{
+    padding-left: 26.5%;
+    }
+.dsrTxt{
+    padding-left: 5.7%;
+    }
+.regTextBlk{
+    width: 41.1%;
+    padding-left: 7px;
+    }
+}
+@media only screen and (min-width:1400px){
+.wrkOfArt{
+    padding-left: 24.7%;
+    }
+.dsrTxt{
+    padding-left: 4.5%;
+    }
+.regTextBlk{
+    width: 36.6%;
+    padding-left: 7px;
+    }
+}
+@media only screen and (min-width:1600px){
+.wrkOfArt{
+    padding-left: 23.5%;
+    }
+.dsrTxt{
+    padding-left: 4%;
+    }
+    .regTextBlk{
+        width: 31.4%;
+        padding-left: 7px;
+        }
+}
+@media only screen and (min-width:1800px){
+.wrkOfArt{
+    padding-left: 22.5%;
+    }
+.dsrTxt{
+    padding-left: 3.4%;
+    }
+    .regTextBlk{
+        width: 34.2%;
+        padding-left: 7px;
+        }
+}

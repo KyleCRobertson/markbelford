@@ -1,0 +1,85 @@
+.article{
+    color: #7c7670;
+    }
+.article::after{
+    content: '';
+    position: relative;
+    display: block;
+    background-color: #7c7670;
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    }
+.articleLast::after{
+    content: '';
+    position: relative;
+    display: block;
+    background-color: #7c7670;
+    height: 0px;
+    width: 100%;
+    }
+.articlePeriodical{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #7c7670; 
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    }
+.articleDate{
+    /*font-family: neue-haas-grotesk-text, sans-serif;
+    font-weight: 400;
+    font-style: normal;*/
+    color: #7c7670; 
+    font-size: 12px;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    margin-top: 0px;
+    text-transform: uppercase;
+    }
+.articleTitle{
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #47453f;
+    padding-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.2em;
+    letter-spacing: 0.01em;
+    }
+.footerImageTextBlock{
+    position: absolute;
+    display: block;
+    padding: 21px 18px 0px 18px;
+    left: 0px;
+    z-index: 2;
+    }
+.footerBannerText{
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-bottom: 12px;
+    }
+@media only screen and (min-width:768px){
+.footerImageTextBlock{
+    position: relative;
+    padding: 48px 9px 0px 9px;
+    }
+}
+@media only screen and (min-width:1400px){  
+.fullBleed {
+    width: 42vw;
+    margin-left: calc(100% - 50vw);
+    }
+.footerImageTextBlock{
+    padding-top: 72px;
+    }   
+}
+@media only screen and (min-width:1600px){
+.footerImageTextBlock{
+    position: relative;
+    display: block;
+    padding-top: 96px;
+    }
+}

@@ -1,0 +1,36 @@
+.heroHeader{
+    position: relative;
+    height: auto;
+    width: max-content;
+    padding: 0px;
+    margin: 24px 0px 24px -5px;
+    color: #fd1d86;
+    }
+.heroHeader h1>*{
+    position: relative;
+    display: block;
+    padding: 0px;
+    line-height: 1em;
+    }
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    font-size:73px;
+    margin-left:6px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -27px;
+    margin-left: 0px;
+    font-size: 96px;
+    }
+@media only screen and (min-width: 425px){
+.heroHeader h1 .adj1{
+    margin-top: 0px;
+    font-size: 86px;
+    margin-left:9px;
+    }
+.heroHeader h1 .adj2{
+    margin-top: -34px;
+    margin-left: 0px;
+    font-size: 120px;
+    }
+}
