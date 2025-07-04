@@ -1,0 +1,112 @@
+.hero{
+    position: relative;
+    top: 20px;
+}
+.heroHeader{
+    position: absolute;
+    height: auto;
+    width: min-content;
+    padding: 0px;
+    top: 29%;
+    left: 11%;
+    color: #fd1d86;
+    z-index: 2;
+    >*{
+        position: relative;
+        display: block;
+        padding: 0px;
+        line-height: 1em;
+        color: #fd1d86;
+        font-family: "BenguiatCaslonRegular";
+    }
+    .adj1{
+        margin: {
+            top: 0px;
+            left: 51px;
+        }
+        font-size: 48px;
+    }
+    .adj2{
+        margin: {
+          top: -42px;  
+        }
+        font-size: 96px;
+    }
+    .adj3{
+        margin: {
+            top: -28px;
+            left: 58px;
+        }
+        font-size: 73px;
+    }
+    .locationText{
+        left: 61px;
+        bottom: 12px;
+        >* {
+            position: relative;
+            display: block;
+            line-height: 1em;
+            font-family: neue-haas-grotesk-display, sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+        .line1{
+            font-size: 24px;
+        }
+        .line2{
+            font-size: 32px;
+            text-transform: uppercase;
+            top: -4px;
+            left: -1px;
+        }
+    }
+}
+.clickMeTag{
+    color: rgb(244, 242, 237);
+    background-color: #fd1d86;
+    position: absolute;
+    display: block;
+    font-family: neue-haas-grotesk-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    text-transform: uppercase;
+    line-height: 0.94em;
+    text-align: right;
+    padding: 10px 48px 18px 12px;
+    top: 48px;
+    left: -124px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid #fd1d86;
+        border-right: 20px solid transparent;
+        bottom: 0px;
+        right: -20px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 28px solid rgb(244, 242, 237);
+        border-right: 28px solid transparent;
+        bottom: -3px;
+        right: -28px;
+    }
+}
+@media only screen and (min-width:576px){
+.contentTopParagraphAdj{
+    margin-top: 24px;
+    }
+}
+@media only screen and (min-width:768px){
+.heroHeader{
+    top: 22%;
+    left: 38%;
+    }
+}

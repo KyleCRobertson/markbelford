@@ -1,0 +1,57 @@
+.footerBanner{
+    &::after{
+        content: '';
+        position: absolute;
+        top: 24px;
+        display: block;
+        height:calc(100% - 48px);
+        width: 100vw;
+        background-color: #000;
+        z-index: -1;
+        right: calc( -50vw + 50%);
+    }
+    .contentRight{
+        justify-content: flex-end;
+    }
+    .footerImageTextBlock{
+        position: absolute;
+        display: block;
+        padding: 48px 18px 0px 18px;
+        left: 0px;
+        z-index: 2;
+        .footerBannerText{
+            color:rgb(244, 242, 237);
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin-left: 32px;
+        }
+    }
+    .bannerImgRight{
+        display: block;
+        position: relative;
+    }
+}
+@media only screen and (min-width:576px){
+.footerImageTextBlock{
+    padding: 24px 36px 0px 36px;
+    }
+}
+@media only screen and (min-width:768px){
+.footerImageTextBlock{
+    position: relative;
+    padding: 48px 9px 0px 9px;
+    }
+}
+@media only screen and (min-width:1400px){
+.footerImageTextBlock{
+    position: relative;
+    display: block;
+    padding-top: 72px;
+    }   
+}
+@media only screen and (min-width:1600px){
+.footerImageTextBlock{
+    padding-top: 96px;
+    }
+}

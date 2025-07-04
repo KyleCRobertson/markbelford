@@ -1,0 +1,181 @@
+.topBlock{
+    padding-top: 96px;
+    .heroHeader{
+        position: relative;
+        height: auto;
+        width: max-content;
+        padding: 0px;
+        color: #fd1d86;
+        margin-left: -3px;
+        >* {
+            position: relative;
+            display: block;
+            padding: 0px;
+            line-height: 1em;
+            color: #fd1d86;
+            font-family: "BenguiatCaslonRegular";
+        }
+        .adj1{
+            margin: {
+                top: 0px;
+                left: 156px;
+            }
+            font-size: 55px;
+        }
+        .adj2{
+            margin: {
+                top: -27px;
+                left: 0px;  
+            }
+            font-size: 72px;
+        }
+        .palmTree{
+            position: absolute;
+            width: 96px;
+            right: -26px;
+            top: -82px;
+        }
+    }
+    .imageBtn{
+        position: relative;
+        cursor: pointer;
+        .topImageBlock{
+            border: 2px solid #eabfba;
+        }
+    }
+    .imageBtnNames{
+        position: relative;
+        text-align: center;
+        font-weight: 400;
+        color: #fd1d86;
+        text-transform: uppercase;
+        letter-spacing: 0.3em;
+    }
+    .contentTopParagraph{
+        padding-top: 0px;
+        padding-bottom: 24px;
+    }
+}
+.pageAnchor{
+    position: absolute;
+    display: block;
+    height: 96px;
+    width: 96px;
+    margin-top: -72px;
+}
+.catagoryHeader{
+    font-size: 72px;
+    font-family: "BenguiatCaslonRegular";
+    color:#fd1d86;
+    margin-top: 24px;
+    line-height: 1em;
+}
+.palmTreeText{
+    position: absolute;
+    bottom: 0px;
+    right: 40%;
+    font-size: 32px;
+    font-family: "BenguiatCaslonRegular";
+    padding: 0px;
+    margin: 0px;
+    padding-bottom: 6px;
+    line-height: 0.98em;
+    letter-spacing: 0.016em;
+}
+.palmTreeBottom{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+@media only screen and (min-width:428px){
+.topBlock{
+    .heroHeader{
+        .adj1{
+            font-size: 72px;
+            margin-left: 156px;
+        }
+        .adj2{
+            margin-top: -27px;
+            left: 0px;
+            font-size: 96px;
+        }
+        .palmTree{
+            width: 105px;
+            right: -9px;
+            top: -65px;
+        }
+    }
+}   
+.palmTreeText{
+    font-size: 48px;
+    }
+}
+@media only screen and (min-width:576px){
+.palmTreeBottom{
+    width: 100%;
+    }
+}      
+@media only screen and (min-width:768px){
+.topBlock{
+    padding-top: 144px;
+    .heroHeader{
+        margin: 0px auto;
+    }
+}
+.catagoryHeader{
+    font-size: 96px;
+}
+.palmTreeText{
+    right: 42.5%;
+    font-size: 63px;
+}
+}
+@media only screen and (min-width:992px){
+.topBlock{
+    align-items: center;
+    height: 100vh;
+    padding-top: 30px;
+}
+.catagoryHeader{
+    font-size: 72px;
+    margin-top: 34%;
+}
+.palmTreeText{
+    right: 144px;
+}
+}
+@media only screen and (min-width:1200px){
+.topBlock{
+    .heroHeader{
+        margin-left: 0px;
+    }
+}
+.catagoryHeader{
+    font-size: 96px;
+}
+.palmTreeText{
+    right: 164px;
+}
+.palmTreeBottom{
+    width: 100%;
+    height: auto;
+}
+}
+@media only screen and (min-width:1400px){
+.catagoryHeader{
+    font-size: 126px;
+}
+.palmTreeText{
+    right: 150px;
+}
+}
+@media only screen and (min-width:1600px){
+.palmTreeText{
+    right: 134px;
+}
+}
+@media only screen and (min-width:1800px){
+.palmTreeText{
+    right: 164px;
+}
+}

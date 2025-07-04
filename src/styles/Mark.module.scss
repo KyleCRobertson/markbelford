@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'BenguiatCaslonSpec';
+    src: url('../webfonts/BenguiatCaslonRegular/font.woff2') format('woff2'),
+    url('../webfonts/BenguiatCaslonRegular/font.woff') format('woff');
+    
+}
+.BenguiatCaslonSpec{
+    font-family: 'BenguiatCaslonSpec';
+    unicode-range: U+0049;
+}
+.markContent{
+    padding-top: 199px !important;
+    .heroHeader{
+        position: relative;
+        height: auto;
+        width: max-content;
+        padding: 0px;
+        >* {
+            position: relative;
+            display: block;
+            padding: 0px;
+            line-height: 1em;
+            color: #fd1d86;
+            font-family: "BenguiatCaslonRegular";
+        }
+        .adj1{
+            margin-top: -6px;
+            font-size: 96px;
+            line-height: 84px;
+            margin-left: 0px;
+        }
+        .adj2{
+            margin-top: -21px;
+            margin-left: 0px;
+            font-size: 96px;
+            line-height: 84px;
+        }
+    }
+}
+@media only screen and (min-width:1200px){
+.markContent{
+    padding-top: 240px !important;
+    .heroHeader{
+        margin-left: 0px;
+    }
+}
+}
