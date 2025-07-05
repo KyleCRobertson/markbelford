@@ -1,3 +1,61 @@
+.landingAni{
+    position: fixed;
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 1000000000;
+    .landingImgCont{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0px;
+        left: 0px;
+        opacity: 0;
+        &.on{
+            animation: inOut 2000ms ease-in-out forwards;
+        }
+        .landingImg{
+            position: fixed;
+            top: 0px;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            object-position: right center;
+            &.left{
+                object-position: left center;
+            }
+        }
+    }
+    &.off{
+        opacity: 0;
+        transition: all ease-in-out 1000ms;
+    }
+    &.gone{
+        display: none;
+    }
+}
+@keyframes inOut{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 1;
+    }
+    70%{
+        opacity: 1; 
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+
 .landingPageTop{
     position: relative;
     top: 0px;
@@ -21,14 +79,26 @@
             .landingTextImg{
                 position: relative;
                 display: block;
-                margin-left: -6px;
+                margin-left: -96px;
+                opacity: 0;
+                transition: all ease-in-out 300ms;
+                &.on{
+                    opacity: 1;
+                    margin-left: -6px;
+                }
             }
         }
         .landingClickTextImg{
             position: relative;
-            top: -5px;
+            top: 40px;
             left: 24px;
             width: 196px;
+            opacity: 0;
+            transition: all ease-in-out 300ms;
+            &.on{
+                opacity: 1;
+                top: -5px;
+            }
         }
     }
 }
@@ -133,7 +203,10 @@
         .landingPageTopCallOut{
             width: 100%;
             .landingTextImg{
-                margin-left: -9px;
+                margin-left: -109px;
+                &.on{
+                    margin-left: -9px;
+                }
             }
         }
         .landingClickTextImg{
@@ -183,7 +256,10 @@
         max-width: 987px;
         .landingPageTopCallOut{
             .landingTextImg{
-                margin-left: -14px;
+                margin-left: -114px;
+                &.on{
+                    margin-left: -14px;
+                }
             }
         }
     }
@@ -212,8 +288,11 @@
         max-width: 1364px;
     }
     .landingClickTextImg{
-        top: -14px;
+        top: -114px;
         left: 14px;
+        &.on{
+          top: -14px; 
+        }
     }
 }
 .landingBackground{
@@ -227,8 +306,11 @@
         max-width: 1597px;
     }
     .landingClickTextImg{
-        top: -18px;
+        top: -118px;
         left: 33px;
+        &.on{
+          top: -18px; 
+        }
     }
 }
 }
