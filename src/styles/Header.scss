@@ -76,6 +76,10 @@ header{
             width: 233px;
             margin-left: -12px;
             transition: all ease-in-out 300ms;
+            opacity: 0;
+            &.on{
+                opacity: 1;
+            }
             .light-logo{
                 display: block;
             }
@@ -118,6 +122,10 @@ header{
             z-index: 1002;
             margin-top: 7px;
             transition: all ease-in-out 300ms;
+            opacity: 0;
+            &.on{
+                opacity: 1;
+            }
             i{
                 position: absolute;
                 width: 100%;

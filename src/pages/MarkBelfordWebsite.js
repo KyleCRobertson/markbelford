@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { NavLink } from '../header/HeaderElements';
 import { headerAppearanceLight } from '../header/headerAppearance';
+import LandingAni from '../components/landing/landingAni.js';
 import FooterBanner from '../footer/FooterBanner';
 import showHiddenText from '../components/ShowText';
 import removeHiddenText from '../components/RemoveText';
@@ -16,12 +17,17 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
     }, []);
     return(
         <main>
+
+            <LandingAni />
+            
+
+
             <section className={`${styles.landingPageTop} ${styles.landingBackground}`}>
                 <div className={styles.landingPageTopInner}>
                     <div className='row'>
                         <div className='col-sm-12'>
                             <div className={`row ${styles.landingPageTopCallOut}`}>
-                                <div className={`col-sm-7 col-md-8 col-xl-7 col-xxl-6 col-xxxl-5 ${styles.landingTextImg}`}>
+                                <div className={`col-sm-7 col-md-8 col-xl-7 col-xxl-6 col-xxxl-5 landingTextImg ${styles.landingTextImg}`}>
                                     <picture>
                                         <img src={landingTextImage} alt='text saying You are Gorgeous' height='100%' width='100%' />
                                     </picture>
@@ -29,8 +35,8 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
                                 <div className='row'>
                                     <div className='col-md-1'></div>
                                     <div className='col-md-9 relative'>
-                                        <NavLink to="/Contact" onClick={() => { menuLabel6on(); headerAppearanceLight(); }}>
-                                            <div className={`col-sm-9 col-md-8 col-xl-7 col-xxl-6 col-xxxl-5 ${styles.landingClickTextImg}`}>
+                                        <NavLink to="/Contact" onClick={() => { headerAppearanceLight(); }}>
+                                            <div className={`col-sm-9 col-md-8 col-xl-7 col-xxl-6 col-xxxl-5 landingClickTextImg ${styles.landingClickTextImg}`}>
                                                 <picture>
                                                     <img src={landingClickText} alt='contact link text saying click here ' height='100%' width='100%' />
                                                 </picture>
@@ -65,7 +71,7 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
             <section className='content middle-big-pad'>
                 <div className='row'>
                     <div className={`col-md-6 col-lg-8 col-xxl-6 ${styles.fullBleedFlushLeft}`}>
-                        <NavLink to="/ParkAvenue" onClick={() => { menuLabel2on(); headerAppearanceLight(); }}>
+                        <NavLink to="/ParkAvenue" onClick={() => { headerAppearanceLight(); }}>
                         <figure>
                             <picture className='image'>
                                 <source media='(max-width:500px)' srcSet={require('../images/home/mark-belford-black-lace-2-xs.webp')} />
@@ -118,7 +124,7 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
                     <div className='col-lg-6 order-lg-2 order-xs-1'>
                         <div className='row'>
                             <div className='col-md-10 col-lg-12'>
-                                <NavLink to="/Butterfield8" onClick={() => { menuLabel2on(); headerAppearanceLight(); }}>
+                                <NavLink to="/Butterfield8" onClick={() => { headerAppearanceLight(); }}>
                                 <figure>
                                     <picture className='image'>
                                         <source media='(max-width:500px)' srcSet={require('../images/butterfield8/mark-belford-butterfield8-xs-1.webp')} />
@@ -145,7 +151,7 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
                                 </div>
                             </div>
                             <div className='col-md-8 col-lg-9 col-xxxl-6'>
-                                <NavLink to="/BurmeseRuby" onClick={() => { menuLabel2on(); headerAppearanceLight(); }}>
+                                <NavLink to="/BurmeseRuby" onClick={() => { headerAppearanceLight(); }}>
                                 <figure>
                                     <picture className='image'>
                                         <source media='(max-width:500px)' srcSet={require('../images/burmese-ruby/mark-belford-burmese-ruby-3-xs.webp')} />
@@ -175,7 +181,7 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
                             <br/>
                             </p>
                             <div className='col-xs-12 col-md-8 col-lg-10 col-xxxl-8'>
-                                <NavLink to="/AcademyGown" onClick={() => { menuLabel2on(); headerAppearanceLight(); }}>
+                                <NavLink to="/AcademyGown" onClick={() => { headerAppearanceLight(); }}>
                                 <figure>
                                     <picture className='image'>
                                         <source media='(max-width:500px)' srcSet={require('../images/academy-gown/mark-belford-academy-gown-home-sm.webp')} />
