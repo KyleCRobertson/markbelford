@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import HeaderComponent from './headerComponent';
 import HeaderScrolling from './headerScrolling';
 import { menuOpen, menuClose }  from './headerShowHide';
@@ -6,8 +7,36 @@ import { headerAppearanceDark, headerAppearanceLight } from './headerAppearance'
 
 const menuLabels = ['mark', 'atelier', 'spectacle', 'proof', 'fit', 'contact'];
 
+
+
+
 export default function HeaderContainer() {
     const [menuLabel, setMenuLabel] = useState('');
+
+    const location = useLocation();
+    const currentPathname = location.pathname;
+
+    
+    useEffect(() => {
+        const headerBlock = document.querySelector('header');
+        const menuDropDownBtn = document.querySelector('.menu-drop-down-btn');
+        if(currentPathname === '/'){
+            headerBlock.classList.remove('bg-color-on');
+            menuDropDownBtn.classList.remove('light');
+            setMenuLabel('');
+        }
+        if(currentPathname === '/Mark'){
+            headerBlock.classList.add('bg-color-on');
+            menuDropDownBtn.classList.add('light');
+            setMenuLabel(menuLabels[0]);
+        }
+        if(currentPathname === '/Contact'){
+            headerBlock.classList.add('bg-color-on');
+            menuDropDownBtn.classList.add('light');
+            setMenuLabel(menuLabels[5]);
+        }
+    }, [currentPathname])
+    
 
     // CONTROLS MENU LABELS
     useEffect(() => {
@@ -34,6 +63,8 @@ export default function HeaderContainer() {
         const newMenuLable5 = menuLabels[4];
         const newMenuLable6 = menuLabels[5];
         // SETS HEADER ELEMENTS TO DARK OR LIGHT BASED ON NAV ACTIVE
+        
+        
         const darkAddition = () => {
             headerBlock.classList.add('bg-color-on');
             menuDropDownBtn.classList.add('light');
@@ -78,8 +109,10 @@ export default function HeaderContainer() {
         } else {
             return header.classList.remove("dark");
         }
-    }, []);
-    const menuLabel1on = () => {
+    }, [currentPathname]);
+
+
+    /*const menuLabel1on = () => {
         setMenuLabel(menuLabels[0]);
         }
     const menuLabel2on = () => {
@@ -96,7 +129,7 @@ export default function HeaderContainer() {
         }
     const menuLabel6on = () => {
         setMenuLabel(menuLabels[5]);
-        }
+        }*/
 
     const menuLabelReset = () => {
         setMenuLabel('');
@@ -266,12 +299,12 @@ export default function HeaderContainer() {
             headerAppearanceLight={headerAppearanceLight}
             subMenuCollectionClose={subMenuCollectionClose}
             subMenuEventsClose={subMenuEventsClose}
-            menuLabel1on={menuLabel1on}
+            /*menuLabel1on={menuLabel1on}
             menuLabel2on={menuLabel2on}
             menuLabel3on={menuLabel3on}
             menuLabel4on={menuLabel4on}
             menuLabel5on={menuLabel5on}
-            menuLabel6on={menuLabel6on}
+            menuLabel6on={menuLabel6on}*/
             menuBG1={menuBG1}
             menuBG2={menuBG2}
             menuBG3={menuBG3}

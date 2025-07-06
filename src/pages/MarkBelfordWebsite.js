@@ -17,11 +17,7 @@ export default function MarkBelfordWebsite({menuLabel2on, menuLabel6on}){
     }, []);
     return(
         <main>
-
             <LandingAni />
-            
-
-
             <section className={`${styles.landingPageTop} ${styles.landingBackground}`}>
                 <div className={styles.landingPageTopInner}>
                     <div className='row'>
