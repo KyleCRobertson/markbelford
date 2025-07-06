@@ -7,37 +7,58 @@ import { headerAppearanceDark, headerAppearanceLight } from './headerAppearance'
 
 const menuLabels = ['mark', 'atelier', 'spectacle', 'proof', 'fit', 'contact'];
 
-
-
-
 export default function HeaderContainer() {
     const [menuLabel, setMenuLabel] = useState('');
 
     const location = useLocation();
     const currentPathname = location.pathname;
-
-    
     useEffect(() => {
         const headerBlock = document.querySelector('header');
         const menuDropDownBtn = document.querySelector('.menu-drop-down-btn');
+        const headerMenuBtn = document.querySelector('.menu-drop-down-btn');
+        const headerLogo = document.querySelector('.header-logo');
+
+        const nav2 = document.querySelector('.nav-2');
+
+
+        const lightBGstyles = () => {
+            headerBlock.classList.add('bg-color-on');
+            menuDropDownBtn.classList.add('light');
+            headerLogo.classList.add('on');
+            headerMenuBtn.classList.add('on');
+        }
+        if(currentPathname === '/Mark'){
+            lightBGstyles();
+            setMenuLabel(menuLabels[0]);
+        }
+        if(currentPathname === '/Butterfield8' || '/AcademyGown' || '/BurmeseRuby' || '/CoronationGown' || '/ParkAvenue'){
+            lightBGstyles();
+            nav2.classList.add('on1')
+            setMenuLabel(menuLabels[1]);
+        }
+        if(currentPathname === '/SwedishPrince' || '/HotelCalifornia' || '/FairmontFashion'){
+            lightBGstyles();
+            setMenuLabel(menuLabels[2]);
+        }
+        if(currentPathname === '/Publications'){
+            lightBGstyles();
+            setMenuLabel(menuLabels[3]);
+        }
+        if(currentPathname === '/CustomSizing'){
+            lightBGstyles();
+            setMenuLabel(menuLabels[4]);
+        }
+        if(currentPathname === '/Contact'){
+            lightBGstyles();
+            setMenuLabel(menuLabels[5]);
+        }
         if(currentPathname === '/'){
             headerBlock.classList.remove('bg-color-on');
             menuDropDownBtn.classList.remove('light');
             setMenuLabel('');
         }
-        if(currentPathname === '/Mark'){
-            headerBlock.classList.add('bg-color-on');
-            menuDropDownBtn.classList.add('light');
-            setMenuLabel(menuLabels[0]);
-        }
-        if(currentPathname === '/Contact'){
-            headerBlock.classList.add('bg-color-on');
-            menuDropDownBtn.classList.add('light');
-            setMenuLabel(menuLabels[5]);
-        }
     }, [currentPathname])
     
-
     // CONTROLS MENU LABELS
     useEffect(() => {
         const header = document.getElementById("header");
